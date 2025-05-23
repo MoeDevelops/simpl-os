@@ -25,7 +25,7 @@ jobs:
         run: bluebuild generate-iso --iso-name simpl-os.iso image ghcr.io/moe-os/simpl-os:latest
 
       - name: Upload to S3
-        uses: shallwefootball/s3-upload-action@v1
+        uses: shallwefootball/s3-upload-action@v1.3.3
         with:
           endpoint: ${{ secrets.S3_URL}}
           aws_key_id: ${{ secrets.S3_KEY_ID }}
