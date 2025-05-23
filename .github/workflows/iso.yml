@@ -24,9 +24,11 @@ jobs:
       - name: Build ISO
         run: bluebuild generate-iso --iso-name simpl-os.iso image ghcr.io/moe-os/simpl-os:latest
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload to S3
+        uses: shallwefootball/s3-upload-action
         with:
-          name: ISO-Files
-          path: simpl-os.iso*
-          retention-days: 8
+          endpoint: ${{ secrets.S3_URL}}
+          aws_key_id: ${{ secrets.S3_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.S3_BUCKET }}
+          source_dir: "simpl-os.iso"
