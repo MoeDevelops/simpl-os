@@ -7,8 +7,8 @@ It is kept more lightweight.
 
 ## Installation
 
-1. Get an ISO from the latest [ISO-Build](https://github.com/moe-os/simpl-os/actions/workflows/iso.yml)
+1. Download the [ISO-File]([(https://s3.moedev.moe/browser/simpl-os))
 
-2. Flash it to an USB-Drive (min. 8GB) with Tools like [Balena Etcher](https://etcher.balena.io/) or [Ventoy](https://www.ventoy.net/)
+2. Flash it to an USB-Drive (min. 8GB) with tools like [Ventoy](https://www.ventoy.net/)
 
 3. Boot from the USB-Drive and follow the instructions
