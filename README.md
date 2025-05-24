@@ -7,7 +7,7 @@ It is kept more lightweight.
 
 ## Installation
 
-1. Download the [ISO-File]([(https://s3.moedev.moe/browser/simpl-os))
+1. Download the [ISO-File](https://s3.moedev.moe/browser/simpl-os)
 
 2. Flash it to an USB-Drive (min. 8GB) with tools like [Ventoy](https://www.ventoy.net/)
 
